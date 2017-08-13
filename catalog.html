@@ -1,0 +1,137 @@
+<!DOCTYPE HTML>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>Магазин готовых шаблонов дизайн-студии «Нёрдс»</title>
+  </head>
+
+  <body>
+    <header class="main-header">
+      <nav class="main-navigation">
+        <a class="main-logo" href="index.html">
+          <img src="http://placehold.it/160x65" width="160" height="65" alt="Логотип">
+        </a>
+        <ul class="site-navigation">
+          <li><a href="about-us.hrml">Студия</a></li>
+          <li><a href="Clients.hrml">Клиенты</a></li>
+          <li class="navigation-current"><a href="Catalog.hrml">Магазин</a></li>
+          <li><a href="Contacts.hrml">Контакты</a></li>
+          </ul>
+        <ul class="basket">
+          <li><a href="basket.html">Корзина</a></li>
+        </ul>
+        <h1 class="page-title"> Магазин готовых шаблонов</h1>
+      </nav>
+    </header>
+
+    <main class="container">
+      <section class="filters">
+        <h2 class="visually-hidden">Фильтр товаров</h2>
+        <form class="filter" method="get" action="#"  oninput="priceoutput.value=pricecount.value">
+          <fieldset>
+            <legend>Стоимость:</legend>
+            <input class="visually-hidden filter-input filter-input-range" name="pricecount" type="range" min="0" max="1500" step="50">
+            <p> От <span> 0 </span> до  <span>15 000</span></p>
+            <!--Не знаю как сделать двойной ползунок и свзяать его с полями "от" и "до"-->
+          </fieldset>
+          <fieldset>
+            <legend>Сетка:</legend>
+            <ul>
+              <li class="filter-option">
+                <input class="visually-hidden filter-input filter-input-radio" type="radio" name="grid" value="adaptive" checked>Адаптивная
+              </li>
+              <li>
+                <input class="visually-hidden filter-input filter-input-radio" type="radio" name="grid" value="fixed"> Фиксированная
+              </li>
+              <li>
+                <input class="visually-hidden filter-input filter-input-radio" type="radio" name="grid" value="rubber">Резиновая
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset>
+            <legend>Особенности:</legend>
+            <ul>
+              <li class="filter-option">
+                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="slider" checked>Слайдер
+              </li>
+              <li>
+                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="block-benefits">Блок преимуществ
+              </li>
+              <li class="filter-option">
+                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="news" checked>Новости
+              </li>
+              <li class="filter-option">
+                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="gallery">Галерея
+              </li>
+              <li class="filter-option">
+              <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="basket">Корзина
+              </li>
+            </ul>
+            </fieldset>
+          <button type="submit" class="filter-button button">Покозать</button>
+        </form>
+      </section>
+    <!--Не знаю как сделать сортировку товаров по критерию по возрастанию и убыванию (по цене, типу и названию)-->
+
+      <section>
+        <h2 class="visually-hidden">Каталог готовых шаблонов</h2>
+        <ul class="catalog-list">
+          <li class="catalog-item">
+            <h3 class="visually-hidden">Сайт города Седона</h3>
+            <a href="#"> <img src="http://placehold.it/360x616" width="360" height="616" alt="Изображение сайта города Седона"></a>
+          </li>
+          <li class="catalog-item">
+            <h3 class="visually-hidden">Сайт приложения «Pink»</h3>
+            <a href="#"> <img src="http://placehold.it/360x616" width="360" height="616" alt="Изображение сайта мобильного приложения «Pink»"></a>
+          </li>
+          <li class="catalog-item">
+            <h3 class="visually-hidden">Сайт барбершопа «Бородинский»</h3>
+            <a href="#"> <img src="http://placehold.it/360x616" width="360" height="616" alt="Изображение сайта барбершопа «Бородинский»"></a>
+          </li>
+          <li class="catalog-item">
+            <h3 class="visually-hidden">Сайт магазина товаров ручной работы «Mishka»</h3>
+            <a href="#"> <img src="http://placehold.it/360x616" width="360" height="616" alt="Изображение сайта магазина товаров ручной работы «Mishka»"></a>
+          </li>
+          <li class="catalog-item">
+            <h3 class="visually-hidden">Сайт института</h3>
+              <a href="#"> <img src="http://placehold.it/360x616" width="360" height="616" alt="Изображение сайта института"></a>
+            </li>
+            <li class="catalog-item">
+              <h3 class="visually-hidden">Сайт производителя кваса «Кваст»</h3>
+              <a href="#"> <img src="http://placehold.it/360x616" width="360" height="616" alt="Изображение сайта производителя кваса «Кваст»"></a>
+            </li>
+          </ul>
+          <ul class="pagination-list">
+            <li class="pagination-item pagination-item-current"><a href="#">1</a></li>
+            <li class="pagination-item"><a>2</a></li>
+            <li class="pagination-item"><a href="#">3</a></li>
+        </ul>
+      </section>
+    </main>
+    
+    <footer>
+      <section class="footer-contacts">
+        <h2 class="visually-hidden">Наши контакты</h2>
+        <img src="http://placehold.it/1437x415" width="1437" height="415" alt="Карта">
+        <div>
+          <h3>Nёrds Design Studio</h3>
+          <p>191186, Санкт-Петербург<br>
+            ул. Большая Конюшенная д.1, 19/8<br>
+          </p>
+          <p>тел. +7(812) 275-75-75</p>
+          <a class="button" href="#">Напишите нам</a>
+        </div>
+      </section>
+
+      <section class="footer-social">
+        <b>Давайте дружить, это выгодно!</b>
+        <p> Скидка 10% для друзей из социальных сетей.</p>
+        <ul>
+          <li><a href="#" class="social-button">Вконтакте</a></li>
+          <li><a href="#" class="social-button">Facebook</a></li>
+          <li><a href="#" class="social-button">Instagram</a></li>
+        </ul>
+      </section>
+    </footer>
+  </body>
+</html>

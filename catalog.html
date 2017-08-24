@@ -31,7 +31,8 @@
         <form class="filter" method="get" action="#"  oninput="priceoutput.value=pricecount.value">
           <fieldset>
             <legend>Стоимость:</legend>
-            <input class="visually-hidden filter-input filter-input-range" name="pricecount" type="range" min="0" max="1500" step="50">
+            <label class="visually-hidden" for="filter-price">Филтр стоимости</label>
+            <input class="visually-hidden filter-input filter-input-range" name="pricecount" type="range" min="0" max="1500" step="50" id="filter-price">
             <p> От <span> 0 </span> до  <span>15 000</span></p>
             <!--Не знаю как сделать двойной ползунок и свзяать его с полями "от" и "до"-->
           </fieldset>
@@ -39,13 +40,16 @@
             <legend>Сетка:</legend>
             <ul>
               <li class="filter-option">
-                <input class="visually-hidden filter-input filter-input-radio" type="radio" name="grid" value="adaptive" checked>Адаптивная
+                <input class="visually-hidden filter-input filter-input-radio" type="radio" name="grid" value="adaptive" id="filter-adaptive" checked>
+                <label for="filter-adaptive"> Адаптивная</label>
               </li>
               <li>
-                <input class="visually-hidden filter-input filter-input-radio" type="radio" name="grid" value="fixed"> Фиксированная
+                <input class="visually-hidden filter-input filter-input-radio" type="radio" name="grid" value="fixed" id="filter-fixed">
+                  <label for="filter-fixed">Фиксированная</label>
               </li>
               <li>
-                <input class="visually-hidden filter-input filter-input-radio" type="radio" name="grid" value="rubber">Резиновая
+                <input class="visually-hidden filter-input filter-input-radio" type="radio" name="grid" value="rubber" id="filter-rubber">
+                  <label for="filter-rubber">Резиновая</label>
               </li>
             </ul>
           </fieldset>
@@ -53,19 +57,24 @@
             <legend>Особенности:</legend>
             <ul>
               <li class="filter-option">
-                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="slider" checked>Слайдер
+                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="slider" id="filter-slider" checked>
+                <label for"filter-slider">Слайдер</label>
               </li>
               <li>
-                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="block-benefits">Блок преимуществ
+                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="block-benefits" id="filter-benefits">
+                <label for"filter-benefits">Блок преимуществ</label>
               </li>
               <li class="filter-option">
-                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="news" checked>Новости
+                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="news" id="filter-news" checked>
+                <label for"filter-news">Новости</label>
               </li>
               <li class="filter-option">
-                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="gallery">Галерея
+                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="gallery" id="filter-gallery">
+                <label for"filter-gallery">Галерея</label>
               </li>
               <li class="filter-option">
-              <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="basket">Корзина
+              <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="basket" id="filter-basket">
+              <label for"filter-basket">Корзина</label>
               </li>
             </ul>
             </fieldset>
@@ -80,32 +89,56 @@
           <li class="catalog-item">
             <h3 class="visually-hidden">Сайт города Седона</h3>
             <a href="#"> <img src="img/view-sedona.jpg" width="360" height="616" alt="Изображение сайта города Седона"></a>
+            <div class="modal">
+              <p>Информационный сайт для туристов</p>
+              <a class="button" href="#">9 900 руб.</a>
+            </div>
           </li>
           <li class="catalog-item">
             <h3 class="visually-hidden">Сайт приложения «Pink»</h3>
             <a href="#"> <img src="img/view-pink.jpg" width="360" height="616" alt="Изображение сайта мобильного приложения «Pink»"></a>
+            <div class="modal">
+              <p>Продуктовый лендинг приложения для iOS и Android</p>
+              <a class="button" href="#">9 900 руб.</a>
+            </div>
           </li>
           <li class="catalog-item">
             <h3 class="visually-hidden">Сайт барбершопа «Бородинский»</h3>
             <a href="#"> <img src="img/view-barbershop.jpg" width="360" height="616" alt="Изображение сайта барбершопа «Бородинский»"></a>
+            <div class="modal">
+              <p>Сайт салона красоты. Для мужчин, да.</p>
+              <a class="button" href="#">9 900 руб.</a>
+            </div>
           </li>
           <li class="catalog-item">
             <h3 class="visually-hidden">Сайт магазина товаров ручной работы «Mishka»</h3>
             <a href="#"> <img src="img/view-mishka.jpg" width="360" height="616" alt="Изображение сайта магазина товаров ручной работы «Mishka»"></a>
+            <div class="modal">
+              <p>Интернет-магазин  вязаных игрушек</p>
+              <a class="button" href="#">9 900 руб.</a>
+            </div>
           </li>
           <li class="catalog-item">
             <h3 class="visually-hidden">Сайт института</h3>
               <a href="#"> <img src="img/view-aplus.jpg" width="360" height="616" alt="Изображение сайта института"></a>
+              <div class="modal">
+                <p>Лендинг курсов повышения квалификации</p>
+                <a class="button" href="#">9 900 руб.</a>
+              </div>
             </li>
             <li class="catalog-item">
               <h3 class="visually-hidden">Сайт производителя кваса «Кваст»</h3>
-              <a href="#"> <img src="img/img-kvast.jpg" width="360" height="616" alt="Изображение сайта производителя кваса «Кваст»"></a>
+              <a href="#"> <img src="img/view-kvast.jpg" width="360" height="616" alt="Изображение сайта производителя кваса «Кваст»"></a>
+              <div class="modal">
+                <p>Промо-сайт производителя крафтового кваса</p>
+                <a class="button" href="#">9 900 руб.</a>
+              </div>
             </li>
           </ul>
           <ul class="pagination-list">
-            <li class="pagination-item pagination-item-current"><a href="#">1</a></li>
-            <li class="pagination-item"><a>2</a></li>
-            <li class="pagination-item"><a href="#">3</a></li>
+            <li class="pagination-item pagination-item-current"><button type="button">1</button></li>
+            <li class="pagination-item"><button type="button">2</button></li>
+            <li class="pagination-item"><button type="button">3</button></li>
         </ul>
       </section>
 
@@ -118,7 +151,7 @@
             ул. Большая Конюшенная д.1, 19/8<br>
           </p>
           <p>тел. +7(812) 275-75-75</p>
-          <a class="button" href="#">Напишите нам</a>
+          <button class="button" type="button" href="#">Напишите нам</a>
         </div>
       </section>
     </main>
@@ -128,9 +161,9 @@
         <b>Давайте дружить, это выгодно!</b>
         <p> Скидка 10% для друзей из социальных сетей.</p>
         <ul>
-          <li><a href="#" class="social-button">Вконтакте</a></li>
-          <li><a href="#" class="social-button">Facebook</a></li>
-          <li><a href="#" class="social-button">Instagram</a></li>
+          <li><a href="#" class="social-button"><span class="visually-hidden">Вконтакте</span></a></li>
+          <li><a href="#" class="social-button"><span class="visually-hidden">Фейсбук</span></a></li>
+          <li><a href="#" class="social-button"><span class="visually-hidden">Инстаграм</span></a></li>
         </ul>
       </section>
     </footer>

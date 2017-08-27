@@ -1,23 +1,304 @@
 body {
+  margin: 0;
+  padding: 0;
+
+  font-family: "Roboto", "Arial", sans-serif;
   font-size: 16px;
   line-height: 24px;
-  color: #283136;
   font-weight: normal;
-  font-family: "Roboto", "Arial", sans-serif;
+  color: #283136;
+
+  background-color: #ffffff;
 }
 
+a {
+  text-decoration: none;
+}
+
+.main-navigation {
+  line-height: 30px;
+  color: #000000;
+}
+
+.site-navigation a,
+.user-navigation a,
+.basket a {
+  color: #000000;
+}
+
+
+
+.site-navigation a:hover,
+.user-navigation a:hover,
+.basket a:hover,
+.site-navigation a:focus,
+.user-navigation a:focus,
+.basket a:focus {
+  color: #fb565a;
+}
+
+.site-navigation a:active,
+.user-navigation a:active,
+.basket a:active {
+  color: #000000;
+  opacity: 0.3;
+}
+
+.site-navigation,
+.user-navigation,
+.basket {
+  list-style: none;
+}
+
+.main-header,
+.about-design {
+  background-color: #eeeeee;
+}
 
 .page-title {
   font-size: 55px;
   line-height: 55px;
   color: #000000;
-  font-weight: normal;
+  font-weight: medium;
 }
 
+.about-design b{
+  font-size: 55px;
+  line-height: 55px;
+}
+
+.button {
+  font-size: 16px;
+  line-height: 18px;
+  text-align: center;
+  color: #ffffff;
+
+  background-color: #fb565a;
+  border: none;
+}
+
+.button:hover,
+.button:focus {
+  color: #ffffff;
+
+  background-color: #e74246;
+  border: none;
+}
+
+.button:active {
+  color: #ffffff;
+
+  background-color: #d7373b;
+}
+
+.about-design p {
+  color: #283136;
+}
+
+.list {
+  list-style: none;
+}
 
 .our-works-title {
   font-size: 24px;
   line-height: 30px;
   color: #000000;
   font-weight: bold;
+}
+
+.button.order2  {
+  background-color: #00ca74;
+}
+
+.button.order2:hover,
+.button.order2:focus {
+  background-color: #00bc6c;
+}
+
+.button.order2:active {
+  background-color: #00aa62;
+  opacity: 0.3;
+}
+
+.button.order3  {
+  background-color: #efc84a;
+}
+
+.button.order3:hover,
+.button.order3:focus {
+  background-color: #eab534;
+}
+
+.button.order3:active {
+  background-color: #e5a722;
+  opacity: 0.3;
+}
+
+.main-about-us b:nth-of-type(2) {
+  font-size: 45px;
+  line-height: 45px;
+  font-weight: medium;
+  color: #000000;
+}
+
+.main-about-us h3 {
+  font-weight: bold;
+  color: #000000;
+}
+
+.main-about-us b:nth-of-type(2) {
+  color: #000000;
+  font-weight: bold;
+}
+
+.about-us-table tr:first-of-type {
+  font-size: 45px;
+  line-height: 10.06px;
+  color: #000000;
+}
+
+.about-us-table tr:last-of-type {
+  line-height: 18px;
+}
+
+.filter-name {
+  font-size: 18px;
+  line-height: 30px;
+  width: bold;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+.filter-price p {
+  line-height: 22px;
+  text-transform: uppercase;
+}
+
+.filter label {
+  line-height: 20px;
+}
+
+.filter fieldset {
+  border: none;
+}
+
+.filter-input:disabled + label {
+  opacity: 0.3;
+}
+
+.filter-button {
+  color: #000000;
+
+  background-color: #eeeeee;
+}
+
+.filter-button:hover,
+.filter-button:focus {
+  color: #000000;
+
+  background-color: #dfdfdf;
+}
+
+.filter-button:active {
+  opacity: 0.3;
+
+  background-color: #d5d5d5;
+}
+
+.filter-second h3 {
+  font-size: 18px;
+  line-height: 18px;
+  width: bold;
+  text-transform: uppercase;
+}
+
+.filter-second a {
+  font-size: 14px;
+  color: #000000;
+
+  opacity: 0.3;
+}
+
+.filter-second-option a:hover,
+.filter-second-option a:focus {
+  opacity: 0.6;
+}
+
+.filter-second-option a:active {
+  opacity: 1;
+}
+
+.filter-second .current a {
+  opacity: 1;
+}
+
+.pagination-item a {
+  line-height: 18px;
+  text-align: center;
+  color: #000000;
+
+  background-color: #eeeeee;
+}
+
+.pagination-item a:hover,
+.pagination-item a:focus {
+  color: #000000;
+
+  background-color: #dfdfdf;
+}
+
+.pagination-item a:active,
+.pagination-item a:active {
+  color: #000000;
+
+  background: #d5d5d5;
+  opacity: 0.3;
+}
+
+.pagination-item-current a {
+  text-align: center;
+  color: #000000;
+
+  background-color: #ffffff;
+}
+
+.modal h4 {
+  font-size: 18px;
+  line-height: 30px;
+  width: bold;
+  text-transform: uppercase;
+  color: #000000:
+}
+
+.modal p {
+  line-height:18px;
+  color: #666666;
+}
+
+.contacts h3 {
+  font-size: 18px;
+  line-height: 30px;
+  width: bold;
+  color: #000000;
+}
+
+.contacts p {
+  line-height: 18px;
+  color: #666666;
+}
+
+.footer {
+  background-color: #ffffff;
+}
+
+.footer-social b {
+  font-size: 36px;
+  line-height: 36px;
+  width: bold;
+  color: #000000;
+}
+
+.footer-social p {
+  line-height: 22px;
+  color: #444444;
 }

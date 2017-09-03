@@ -3,14 +3,14 @@
   <head>
     <meta charset="utf-8">
     <title>Дизайн-студия «Нёрдс»</title>
-    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&amp;subset=cyrillic" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700,900&amp;subset=cyrillic" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
   </head>
 
   <body>
     <header class="main-header">
-      <nav class="main-navigation">
+      <nav class="main-navigation wrapper">
         <a class="main-hearder-logo" href="index.html">
         <img src="img/nerds-logo.svg" width="160" height="65" alt="Логотип дизайн-студии «Нёрдс»">
         </a>
@@ -27,8 +27,8 @@
     </header>
 
 
-      <div class="about-design-wripper">
-        <div class="about-design">
+      <div class="about-design-contaner">
+        <div class="about-design wrapper">
 
           <b>Долго, дорого, скрупулезно.</b>
           <img src="img/slide1.png" width="700" height="413" alt="Иллюстрация статьи">
@@ -39,7 +39,7 @@
         </div>
       </div>
 
-    <main class="main-container">
+    <main class="main-container wrapper">
       <h1 class="visually-hidden">Студия разработки Нёрдс. Главная страница</h1>
       <section class="our-works">
         <ul class="list">
@@ -64,32 +64,35 @@
         </ul>
       </section>
 
-      <section class="main-about-us">
-        <h2 class="visually-hidden">О нас</h2>
-        <b>Мы — маленькая, но гордая дизайн-студия студия из Краснодара.</b>
-        <img class="about-us-logo" src="img/nerds-illustration.png" width="360" height="208" alt="Логотип">
-        <p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работам не покладая рук, как роботы.</p>
+      <section class="main-about-us wrapper">
+        <div class="about-us-container1">
+          <h2 class="visually-hidden">О нас</h2>
+          <b>Мы — маленькая, но гордая дизайн-студия студия из Краснодара.</b>
+          <p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работам не покладая рук, как роботы.</p>
 
-        <h3>Выполняем заказы на разработку:</h3>
-        <ul class="about-us-orders list">
-          <li>Веб-сайтов любой сложности</li>
-          <li>Мобильных приложений для iOS и Android</li>
-          <li>Слайдшоу и видео для корпоративных презентаций</li>
-        </ul>
-
-        <b>С 2004 года любим точность в всем:</b>
-        <table class="about-us-table">
-          <tr>
-            <td>146<sup>%</sup></td>
-            <td>100<sup>%</sup></td>
-            <td>50<sup>%</sup></td>
-          </tr>
-          <tr>
-            <td>Уровень<br> самоотдачи</td>
-            <td>Соблюдение<br> сроков</td>
-            <td>Минимальная<br> предоплата</td>
-          </tr>
-        </table>
+          <h3>Выполняем заказы на разработку:</h3>
+          <ul class="about-us-orders list">
+            <li>Веб-сайтов любой сложности</li>
+            <li>Мобильных приложений для iOS и Android</li>
+            <li>Слайдшоу и видео для корпоративных презентаций</li>
+          </ul>
+        </div>
+        <div class="about-us-container2">
+          <img class="about-us-logo" src="img/nerds-illustration.png" width="360" height="208" alt="Логотип">
+          <b>С 2004 года любим точность в всем:</b>
+          <table class="about-us-table">
+            <tr>
+              <td>146<sup>%</sup></td>
+              <td>100<sup>%</sup></td>
+              <td>50<sup>%</sup></td>
+            </tr>
+            <tr>
+              <td>Уровень<br> самоотдачи</td>
+              <td>Соблюдение<br> сроков</td>
+              <td>Минимальная<br> предоплата</td>
+            </tr>
+          </table>
+        </div>
       </section>
 
       <div class="our-partners">
@@ -100,31 +103,49 @@
           <li><a href="#"><img src="img/logo-4.png" width="173" height="84" alt="Магазин товаров ручной работы «Mishka»"></a></li>
         </ul>
       </div>
-
-      <section class="contacts">
-        <h2 class="visually-hidden">Наши контакты</h2>
-        <img src="img/map.png" width="1437" height="415" alt="Карта">
-        <div>
-          <h3>Nёrds Design Studio</h3>
-          <p>191186, Санкт-Петербург,
-            ул. Б. Конюшенная, д. 19/8
-          </p>
-          <p>тел. +7(812) 275-75-75</p>
-          <button type="button" class="button">Напшите нам</button>
-        </div>
-      </section>
     </main>
 
-    <footer>
-      <section class="footer-social">
-        <h2 class="visually-hidden"> Сссылки на наши страницы в социальных сетях</h2>
-        <b>Давайте дружить, это выгодно!</b>
-        <p> Скидка 10% для друзей из социальных сетей.</p>
-        <ul class="list">
-          <li><a href="#" class="social-button"><span class="visually-hidden">Вконтакте</span></a></li>
-          <li><a href="#" class="social-button"><span class="visually-hidden">Фейсбук</span></a></li>
-          <li><a href="#" class="social-button"><span class="visually-hidden">Инстаграм</span></a></li>
-        </ul>
+      <section class="contacts">
+        <div class="wrapper">
+          <div class="contacts-container">
+            <h2 class="visually-hidden">Наши контакты</h2>
+              <h3>Nёrds Design Studio</h3>
+              <p>191186, Санкт-Петербург,
+                ул. Б. Конюшенная, д. 19/8
+              </p>
+              <p>тел. +7(812) 275-75-75</p>
+              <button type="button" class="button">Напшите нам</button>
+          </div>
+        </div>
+      </section>
+
+
+    <footer class="main-footer">
+      <section class="footer-social wrapper">
+        <div class="footer-social-container1">
+          <h2 class="visually-hidden"> Сссылки на наши страницы в социальных сетях</h2>
+          <b>Давайте дружить, это выгодно!</b>
+          <p> Скидка 10% для друзей из социальных сетей.</p>
+        </div>
+        <div class="footer-social-container2">
+          <ul class="social-list list">
+            <li class="vk"><a href="#" class="social-button">
+              <img src="img/vk-icon.svg">
+              <span class="visually-hidden">Вконтакте</span>
+              </a>
+            </li>
+            <li class="fb"><a href="#" class="social-button">
+              <img src="img/fb-icon.svg">
+              <span class="visually-hidden">Фейсбук</span>
+            </a>
+            </li>
+            <li class="inst"><a href="#" class="social-button">
+              <img src="img/insta-icon.svg">
+              <span class="visually-hidden">Инстаграм</span>
+              </a>
+            </li>
+          </ul>
+        </div>
       </section>
     </footer>
   </body>

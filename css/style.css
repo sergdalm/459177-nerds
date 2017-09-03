@@ -1,6 +1,8 @@
-body {
+html, body {
   margin: 0;
   padding: 0;
+  min-width: 1122px;
+  min-height: 1750px;
 
   font-family: "Roboto", "Arial", sans-serif;
   font-size: 16px;
@@ -15,9 +17,29 @@ a {
   text-decoration: none;
 }
 
-.main-navigation {
+.main-header {
+  width: 100%;
+
+  min-height: 97px;
+}
+
+ .main-navigation {
+  margin: 0 auto;
+  padding: 0 140px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  text-transform: uppercase;
   line-height: 30px;
   color: #000000;
+  width: 1160px;
+  /*margin-bottom: 18px;*/
+
+  background-color: #eeeeee;
+
+  /* Временно для сетки */
+  min-height: 97px;
 }
 
 .site-navigation a,
@@ -25,8 +47,6 @@ a {
 .basket a {
   color: #000000;
 }
-
-
 
 .site-navigation a:hover,
 .user-navigation a:hover,
@@ -47,12 +67,106 @@ a {
 .site-navigation,
 .user-navigation,
 .basket {
+  margin: 0;
+  padding: 0;
+
   list-style: none;
 }
 
-.main-header,
-.about-design {
+
+.main-hearder-logo {
+  width: 160;
+  height: 65;
+  padding-top: 49px;
+}
+
+.site-navigation {
+  width: 560px;
+  display: flex;
+  padding-top: 75px;
+  justify-content: space-between;
+  padding-left: 200px;
+  margin-right: 220px;
+}
+
+.basket {
+  width: 180px;
+  display: flex;
+  flex-direction: column;
+  padding-top: 75px;
+
+  align-items: flex-end;
+}
+
+.about-design-wripper {
+  width: 100%;
+  min-height: 413px;
+  display: flex;
+  justify-content: center;
   background-color: #eeeeee;
+
+}
+
+.about-design {
+  width: 1160px;
+  margin: 0 auto;
+  padding: 0 10px;
+  min-height: 413px;
+  background-color: #eeeeee;
+  padding-bottom:8px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+ /* Временно для сетки */
+ min-height: 132px;
+}
+
+.about-design img {
+  align-self: flex-end;
+
+}
+
+.about-design b {
+  width: 380px;
+  padding-top: 70px;
+  padding-left: 35px;
+
+  font-size: 55px;
+  line-height: 55px;
+
+
+  color: #000000;
+}
+
+.about-design p {
+  display: block;
+  width: 360px;
+  align-self: flex-start;
+
+  color: #283136;
+}
+
+.about-design .button {
+  align-self: flex-start;
+}
+
+.main-container {
+  width: 1160px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+
+.visually-hidden{
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 .page-title {
@@ -62,16 +176,13 @@ a {
   font-weight: medium;
 }
 
-.about-design b{
-  font-size: 55px;
-  line-height: 55px;
-}
-
 .button {
   font-size: 16px;
   line-height: 18px;
   text-align: center;
   color: #ffffff;
+  cursor: pointer;
+  text-transform: uppercase;
 
   background-color: #fb565a;
   border: none;
@@ -89,14 +200,33 @@ a {
   color: rgba(255,255,255, 0.3);
 
   background-color: #d7373b;
-}
 
-.about-design p {
-  color: #283136;
 }
 
 .list {
+  margin: 0;
+  padding: 0;
+
   list-style: none;
+}
+.our-works .list {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+  margin-right: 60px;
+}
+
+.our-works {
+  height: 347px;
+  padding-top: 80px;
+  margin-bottom: 122px;
+  /*Для сетки*/
+
+}
+
+.works-item {
+  width: 300px;
 }
 
 .our-works-title {
@@ -104,6 +234,7 @@ a {
   line-height: 30px;
   color: #000000;
   font-weight: bold;
+  text-transform: uppercase;
 }
 
 .button.order2  {
@@ -119,7 +250,6 @@ a {
   color: rgba(255,255,255, 0.3);
 
   background-color: #00aa62;
-
 }
 
 .button.order3  {
@@ -137,21 +267,48 @@ a {
   background-color: #e5a722;
 }
 
-.main-about-us b:nth-of-type(2) {
+.main-about-us {
+  margin: 0 auto;
+  padding: 0;
+  min-height: 528px;
+  display: flex;
+  flex-wrap: wrap;
+
+
+}
+
+.main-about-us b:nth-of-type(1) {
   font-size: 45px;
   line-height: 45px;
   font-weight: medium;
   color: #000000;
+  width: 779px;
+  padding-top: 36px;
 }
 
 .main-about-us h3 {
   font-weight: bold;
   color: #000000;
+  text-transform: uppercase;
+  align-self: flex-start;
 }
 
 .main-about-us b:nth-of-type(2) {
   color: #000000;
   font-weight: bold;
+  text-transform: uppercase;
+  align-self: flex-end;
+
+}
+
+.main-about-us p {
+  width: 620px;
+}
+
+.main-about-us img {
+  float: right;
+
+  /*margin-left: 40px;*/
 }
 
 .about-us-table tr:first-of-type {
@@ -164,10 +321,15 @@ a {
   line-height: 18px;
 }
 
+.our-partners .list {
+  display: flex;
+  justify-content: space-around;
+}
+
 .filter-name {
   font-size: 18px;
   line-height: 30px;
-  width: bold;
+  font-weight: bold;
   color: #000000;
   text-transform: uppercase;
 }
@@ -216,7 +378,7 @@ a {
 .filter-second h3 {
   font-size: 18px;
   line-height: 18px;
-  width: bold;
+  font-weight: bold;
   text-transform: uppercase;
 }
 
@@ -274,7 +436,7 @@ a {
 .modal h4 {
   font-size: 18px;
   line-height: 30px;
-  width: bold;
+  font-weight: bold;
   text-transform: uppercase;
   color: #000000:
 }
@@ -287,7 +449,7 @@ a {
 .contacts h3 {
   font-size: 18px;
   line-height: 30px;
-  width: bold;
+  font-weight: bold;
   color: #000000;
 }
 
@@ -295,7 +457,9 @@ a {
   line-height: 18px;
   color: #666666;
 }
-
+.contacts img {
+  margin-left:-105px;
+}
 .footer {
   background-color: #ffffff;
 }
@@ -303,7 +467,7 @@ a {
 .footer-social b {
   font-size: 36px;
   line-height: 36px;
-  width: bold;
+  font-weight: bold;
   color: #000000;
 }
 

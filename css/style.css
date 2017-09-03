@@ -273,6 +273,7 @@ a {
   min-height: 528px;
   display: flex;
   flex-wrap: wrap;
+  margin-bottom: 135px;
 
 
 }
@@ -324,6 +325,7 @@ a {
 .our-partners .list {
   display: flex;
   justify-content: space-around;
+  margin-bottom: 126px;
 }
 
 .filter-name {
@@ -446,6 +448,10 @@ a {
   color: #666666;
 }
 
+.contacts {
+  display: flex;
+}
+
 .contacts h3 {
   font-size: 18px;
   line-height: 30px;
@@ -464,14 +470,33 @@ a {
   background-color: #ffffff;
 }
 
+.footer-social {
+  width: 1160px;
+  margin: 0 auto;
+  padding: 0 10px;
+  min-height:  217px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+
+
+
+}
 .footer-social b {
+  margin-left: auto;
+  margin-right: 200px;
+  justify-content: flex-start;
   font-size: 36px;
   line-height: 36px;
   font-weight: bold;
   color: #000000;
+  margin-top: 75px;
+
 }
 
 .footer-social p {
+  margin-left: auto;
+  margin-right: 400px;
   line-height: 22px;
   color: #444444;
 }

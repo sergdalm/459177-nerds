@@ -166,20 +166,18 @@ a {
 }
 
 .page-title-container {
-
-  display: flex;
-  justify-content: center;
   height: 240px;
 }
 
 .page-title {
   box-sizing: border-box;
-
+  padding: 80px 215px 115px 215px;
   font-size: 55px;
+  margin:0;
   line-height: 55px;
   color: #000000;
   font-weight: 500;
-  align-self: center;
+
 
 }
 
@@ -198,20 +196,20 @@ a {
 }
 
 .catalog-container {
+
+
+
+}
+
+.catalog-list {
   width: 760px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-
 }
 
-.catalog-list1, .catalog-list2 {
+.catalog-list .catalog-item {
   width: 360px;
-}
-
-.catalog-list1 .catalog-item,
-.catalog-list2 .catalog-item {
-  width: 616px;
   margin-bottom: 33px;
 }
 
@@ -314,7 +312,7 @@ a {
 }
 
 .about-us-container1 {
-  width: 680px;
+  width: 660px;
 }
 
 .about-us-container2 {

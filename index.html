@@ -15,29 +15,54 @@
         <img src="img/nerds-logo.svg" width="160" height="65" alt="Логотип дизайн-студии «Нёрдс»">
         </a>
         <ul class="site-navigation">
-          <li><a href="about-us.hrml">Студия</a></li>
-          <li><a href="Clients.hrml">Клиенты</a></li>
-          <li><a href="Catalog.hrml">Магазин</a></li>
-          <li><a href="Contacts.hrml">Контакты</a></li>
+          <li class="site-navigation-item"><a  href="about-us.hrml">Студия</a></li>
+          <li class="site-navigation-item"><a  href="Clients.hrml">Клиенты</a></li>
+          <li class="site-navigation-item"><a  href="Catalog.hrml">Магазин</a></li>
+          <li class="site-navigation-item"><a href="Contacts.hrml">Контакты</a></li>
         </ul>
         <ul class="basket">
-          <li><a href="basket.html">Корзина</a></li>
+          <li><a class="basket-link" href="basket.html">Корзина</a></li>
         </ul>
       </nav>
     </header>
 
-
-      <div class="about-design-contaner">
-        <div class="about-design wrapper">
-
-          <b>Долго, дорого, скрупулезно.</b>
-          <img src="img/slide1.png" width="700" height="413" alt="Иллюстрация статьи">
-          <p>Математически выверенный дизайн для вашего сайта или мобильного приложения</p>
-          <a class="button" href="about-design.html">Узнать больше</a>
-
-          <!--"Не знаю как делается слайдер-->
-        </div>
-      </div>
+    <div class="slider-header">
+      <div class="slider wrapper">
+       <input type="radio" id="btn-1" name="toggle" checked>
+       <input type="radio" id="btn-2" name="toggle">
+       <input type="radio" id="btn-3" name="toggle">
+       <div class="slider-controls">
+         <label for="btn-1"></label>
+         <label for="btn-2"></label>
+         <label for="btn-3"></label>
+       </div>
+       <div class="slides">
+         <div class="slide">
+           <div class="slide-text">
+             <b class="slide-title">Долго, дорого, скрупулезно</b>
+             <p>Математически выверенный дизайн<br>
+               для вашего сайта или мобильного приложения.</p>
+             <a class="button" href="#">Узнать больше</a>
+           </div>
+         </div>
+         <div class="slide">
+           <div class="slide-text">
+             <b class="slide-title">Любим математику как никто другой.</b>
+             <p>Никакого креатива, только математические формулы <br>  для расчета идеальных пропорций</p>
+             <a class="button" href="#">Узнать больше</a>
+           </div>
+         </div>
+          <div class="slide">
+           <div class="slide-text">
+             <b class="slide-title">Только ночь, только хардкор</b>
+             <p>Работать днем, как все? Мы против этого. <br>
+               Ближе к полуночи работа только начинается</p>
+             <a class="button" href="#">Узнать больше</a>
+           </div>
+         </div>
+       </div>
+     </div>
+  </div>
 
     <main class="wrapper">
       <h1 class="visually-hidden">Студия разработки Нёрдс. Главная страница</h1>
@@ -46,19 +71,19 @@
           <li class="works-item">
             <img src="img/illustration-1.png" width="300" height="146" alt="Веб-сайты">
             <h2 class="our-works-title">Веб-сайты</h2>
-            <p class="our-work-tex">Мир никогда не будет прежним, после того как увидит ваш сайт!</p>
+            <p class="our-work-text">Мир никогда не будет прежним после того, как увидит ваш сайт!</p>
             <a class="button order1" href="#">Заказать</a>
           </li>
           <li class="works-item">
             <img src="img/illustration-2.png" width="300" height="146" alt="Приложения">
             <h2 class="our-works-title">Приложения</h2>
-            <p class="our-work-tex">Покорите топ-10 приложений в AppStore и Google Play</p>
+            <p class="our-work-text">Покорите топ-10 приложений в AppStore и Google Play</p>
             <a class="button order2" href="#">Заказать</a>
           </li>
           <li class="works-item">
             <img src="img/illustration-3.png" width="300" height="146" alt="Презентации">
             <h2 class="our-works-title">Презентации</h2>
-            <p class="our-work-tex">Вы даже не подозреваете, насколько вы изумительны!</p>
+            <p class="our-work-text">Вы даже не подозреваете, насколько вы изумительны!</p>
             <a class="button order3" href="#">Заказать</a>
           </li>
         </ul>
@@ -67,7 +92,7 @@
       <section class="main-about-us wrapper">
         <div class="about-us-container1">
           <h2 class="visually-hidden">О нас</h2>
-          <b>Мы — маленькая, но гордая дизайн-студия студия из Краснодара.</b>
+          <b>Мы — маленькая, но гордая <br>дизайн-студия студия из Краснодара.</b>
           <p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работам не покладая рук, как роботы.</p>
 
           <h3>Выполняем заказы на разработку:</h3>
@@ -82,14 +107,14 @@
           <b>С 2004 года любим точность в всем:</b>
           <table class="about-us-table">
             <tr>
-              <td>146<sup>%</sup></td>
-              <td>100<sup>%</sup></td>
-              <td>50<sup>%</sup></td>
+              <td class="table-cell">146<sup>%</sup></td>
+              <td class="table-cell">100<sup>%</sup></td>
+              <td class="table-cell">50<sup>%</sup></td>
             </tr>
             <tr>
-              <td>Уровень<br> самоотдачи</td>
-              <td>Соблюдение<br> сроков</td>
-              <td>Минимальная<br> предоплата</td>
+              <td class="table-cell">Уровень<br> самоотдачи</td>
+              <td class="table-cell">Соблюдение<br> сроков</td>
+              <td class="table-cell">Минимальная<br> предоплата</td>
             </tr>
           </table>
         </div>
@@ -101,6 +126,7 @@
           <li><a href="#"><img src="img/logo-2.png" width="209" height="86" alt="Барбершоп «Бородинский»"></a></li>
           <li><a href="#"><img src="img/logo-3.png" width="185" height="52" alt="Мобильное приложение «Pink»"></a></li>
           <li><a href="#"><img src="img/logo-4.png" width="173" height="84" alt="Магазин товаров ручной работы «Mishka»"></a></li>
+          <li class="our-partner"><a href="#"><img src="img/partner-4.png" width="173" height="84" alt="Магазин товаров ручной работы «Mishka»"></a></li>
         </ul>
       </div>
     </main>

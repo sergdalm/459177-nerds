@@ -15,10 +15,10 @@
         <img src="img/nerds-logo.svg" width="160" height="65" alt="Логотип дизайн-студии «Нёрдс»">
         </a>
         <ul class="site-navigation">
-          <li class="site-navigation-item"><a  href="about-us.hrml">Студия</a></li>
-          <li class="site-navigation-item"><a  href="Clients.hrml">Клиенты</a></li>
-          <li class="site-navigation-item"><a  href="Catalog.hrml">Магазин</a></li>
-          <li class="site-navigation-item"><a href="Contacts.hrml">Контакты</a></li>
+          <li class="site-navigation-item"><a  href="about-us.html">Студия</a></li>
+          <li class="site-navigation-item"><a  href="Clients.html">Клиенты</a></li>
+          <li class="site-navigation-item"><a href="catalog.html">Магазин</a></li>
+          <li class="site-navigation-item"><a href="Contacts.html">Контакты</a></li>
         </ul>
         <ul class="basket">
           <li><a class="basket-link" href="basket.html">Корзина</a></li>
@@ -39,7 +39,7 @@
        <div class="slides">
          <div class="slide">
            <div class="slide-text">
-             <b class="slide-title">Долго, дорого, скрупулезно</b>
+             <b class="slide-title">Долго, дорого, скрупулезно.</b>
              <p>Математически выверенный дизайн<br>
                для вашего сайта или мобильного приложения.</p>
              <a class="button" href="#">Узнать больше</a>
@@ -48,7 +48,7 @@
          <div class="slide">
            <div class="slide-text">
              <b class="slide-title">Любим математику как никто другой.</b>
-             <p>Никакого креатива, только математические формулы   для расчета идеальных пропорций</p>
+             <p>Никакого креатива, только математические формулы <br>  для расчета идеальных пропорций</p>
              <a class="button" href="#">Узнать больше</a>
            </div>
          </div>
@@ -140,7 +140,7 @@
                 ул. Б. Конюшенная, д. 19/8
               </p>
               <p>тел. +7(812) 275-75-75</p>
-              <button type="button" class="button">Напшите нам</button>
+              <button type="button" class="button">Напишите нам</button>
           </div>
         </div>
       </section>
@@ -148,7 +148,7 @@
 
     <footer class="main-footer">
       <section class="footer-social wrapper">
-        <div class="">
+        <div class="social-text">
           <h2 class="visually-hidden"> Сссылки на наши страницы в социальных сетях</h2>
           <b>Давайте дружить, это выгодно!</b>
           <p> Скидка 10% для друзей из социальных сетей.</p>
@@ -174,5 +174,22 @@
         </div>
       </section>
     </footer>
+    <section class="modal letter-modal">
+      <h2 class="visually-hidden"> Форма обратной связи</h2>
+      <form class="letter-form" method="post" action="#">
+        <div class="letter-name-container">
+          <label class="input-title" for="name">Ваше имя</label>
+          <input class="modal-form-box" type="text" name="name" id="name" placeholder="Представьтесь, пожалуйста" required>
+        </div>
+        <div class="letter-email-container">
+          <label class="input-title" for="email">Ваш e-mail </label>
+          <input class="modal-form-box email" type="email" name="email" id="email" placeholder="Для отправки ответа" value="" required>
+        </div>
+        <label class="input-title" for="letter-text">Текст письма:</label>
+        <textarea class="modal-form-box text" name="letter-text" id="letter-text" rows="4" cols="80" placeholder="В свободной форме" required></textarea>
+        <button class="button" type="submite">Отправить</button>
+      </form>
+      <button class="modal-close" type="button">Закрыть</button>
+    </section>
   </body>
 </html>

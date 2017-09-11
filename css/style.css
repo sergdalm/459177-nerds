@@ -172,7 +172,7 @@ position: relative;
 
 .slider {
   position:relative;
-  min-height: 420px;
+  min-height: 430px;
   box-sizing: border-box;
   margin: 0 auto;
 }
@@ -184,8 +184,8 @@ position: relative;
 
 .slider-controls {
   position: absolute;
-  bottom: 95px;
-  left: 50%;
+  bottom: 104px;
+  left: 580px;
   width: 200px;
   height: 10px;
   margin-left: -100px;
@@ -193,12 +193,15 @@ position: relative;
   z-index: 1000;
 }
 .slider-controls label {
+  position: relative;
   display:inline-block;
-  width:4px;
-  height:4px;
-  margin:0 3px;
+  box-sizing: border-box;
+  width:18px;
+  height:18px;
+  margin:0 6.5px;
+
   background:white;
-  border: 3px solid #ffffff;
+  border: 5px solid #ffffff;
   vertical-align:top;
   border-radius:50%;
   cursor:pointer;
@@ -206,12 +209,31 @@ position: relative;
 #btn-1:checked ~ .slider-controls label[for="btn-1"],
 #btn-2:checked ~ .slider-controls label[for="btn-2"],
 #btn-3:checked ~ .slider-controls label[for="btn-3"] {
-  background:#c1c1c1;
+
+  background-color: #c1c1c1;
+
 }
+
+#btn-1:checked ~ .slider-controls label[for="btn-1"]::after,
+#btn-2:checked ~ .slider-controls label[for="btn-2"]:after,
+#btn-3:checked ~ .slider-controls label[for="btn-3"]:after {
+  position: absolute;
+  content: "";
+
+  width: 4px;
+  height: 4px;
+  top: 2px;
+  left: 2px;
+
+  background: #ffffff;
+  border-radius: 50%;
+
+}
+
 .slide {
   position: absolute;
-  top: 0;
-  left: 0;
+  top: 7px;
+  left: 0px;
   width: 100%;
   height: 100%;
   overflow: hidden;
@@ -219,14 +241,13 @@ position: relative;
 .slide-text {
   box-sizing: border-box;
   width: 520px;
-  padding: 30px 0;
   color: #283136;
-  padding-top: 80px;
+  padding-top:70px;
 
 }
 
 .slide-text p {
-  padding-top:5px;
+  padding-top: 9px;
   padding-bottom: 17px;
 }
 .slide-title {
@@ -239,8 +260,8 @@ position: relative;
 .slide .button {
   display: block;
   width: 240px;
-  padding: 15px 0;
-  margin-top: 25px;
+  padding: 16px 0;
+  margin-top: 23px;
   color: #ffffff;
   text-align: center;
   text-decoration: none;
@@ -257,11 +278,13 @@ position: relative;
   background-image:url("../img/slide2.png");
   background-repeat:no-repeat;
   background-position: 100%  10px;
+  top: 0px;
 }
 .slide:nth-child(3){
   background-image:url("../img/slide3.png");
   background-repeat:no-repeat;
   background-position: 100%  20px;
+  top: 0px;
 }
 .slide{
   display:none;
@@ -309,7 +332,7 @@ input[type="radio"].visually-hidden {
 .page-title-container {
   min-height: 240px;
   box-sizing: border-box;
-  padding: 75px 215px 110px 215px;
+  padding: 76px 215px 110px 215px;
 }
 
 .page-title {
@@ -343,7 +366,7 @@ input[type="radio"].visually-hidden {
   padding-top: 39px;
   padding-right: 20px;
   padding-left: 20px;
-  margin-bottom: 15px;
+  margin-bottom: 13px;
   border-radius: 3px;
   background: #eeeeee;
 }
@@ -399,7 +422,7 @@ input[type="radio"].visually-hidden {
   width: 80px;
   height: 38px;
   box-sizing: border-box;
-  margin-left: 10px;
+  margin-left: 8px;
   padding: 8px 10px;
 
   font-family: 'Roboto', 'Arial', sans-serif;
@@ -418,7 +441,7 @@ input[type="radio"].visually-hidden {
 }
 
 .filter-price {
-  height: 265px;
+  height: 263px;
   padding: 0;
   margin-left: 0;
 }
@@ -443,7 +466,7 @@ input[type="radio"].visually-hidden {
   display: none;
   position: absolute;
   content:"";
-  bottom: 10px;
+  bottom: 5px;
 
   flex-wrap:wrap;
   align-items: center;
@@ -463,24 +486,19 @@ input[type="radio"].visually-hidden {
   opacity: 1;
 }
 
-.after-item h4 {
-  text-align: center;
-  margin-top: 30px;
-  margin-bottom: 15px;
-}
 
 .after-item p {
   box-sizing: border-box;
   width: 240px;
-  margin-left: 80px;
-  margin-left: 80px;
-  margin-bottom: 25px;
-
+  margin-left: 62px;
+  margin-bottom: 30px;
+  margin-top: 15px;
   text-align: center;
+  line-height: 18px;
 }
 
 .catalog-container {
-  margin-bottom: 30px;
+  margin-bottom: 27px;
 }
 
 .catalog-list {
@@ -551,7 +569,7 @@ input[type="radio"].visually-hidden {
 
 .our-works {
   margin-right: 60px;
-  margin-top: 90px;
+  margin-top: 80px;
   margin-bottom: 80px;
 }
 
@@ -605,14 +623,14 @@ input[type="radio"].visually-hidden {
 .filter-grid {
   padding: 0;
   margin: 0;
-  margin-bottom: 30px;
+  margin-bottom: 27px;
 }
 
 .filter-grid label::before {
   position: absolute;
   content:"";
   left: 0px;
-  bottom:13px;
+  bottom: 16px;
 
   width: 25px;
   height: 25px;
@@ -659,7 +677,7 @@ input[type="radio"].visually-hidden {
 
   display: inline-block;
   box-sizing: border-box;
-  padding-bottom: 16.5px;
+  padding-bottom: 18px;
 
   padding-left: 36px;
   cursor: pointer;
@@ -668,13 +686,13 @@ input[type="radio"].visually-hidden {
 .filter-features {
   padding: 0;
   margin: 0;
-  margin-bottom: 35px;
+  margin-bottom: 30px;
 }
 .filter-features label::before {
   position: absolute;
   content:"";
-  left: 0px;
-  bottom: 14px;
+  left: 1px;
+  bottom: 18px;
 
   width: 28px;
   height: 23px;
@@ -738,7 +756,7 @@ input[type="radio"].visually-hidden {
   display: flex;
   flex-wrap: wrap;
   box-sizing: border-box;
-  padding-bottom: 50px;
+  padding-bottom: 49px;
 
   border-top: 2px solid #eeeeee;
   border-bottom: 2px solid #eeeeee;
@@ -747,20 +765,22 @@ input[type="radio"].visually-hidden {
 .about-us-left {
   width: 800px;
   box-sizing: border-box;
-  padding-top: 75px;
+  padding-top: 43px;
 }
 
 .about-us-right {
   width: 360px;
   box-sizing: border-box;
   margin-left: auto;
-  padding-top: 35px;
+  padding-top: 38px;
 }
 
 .about-us-left h3 {
   box-sizing: border-box;
-  padding-top: 25px;
+  padding-top: 23px;
 
+  font-size: 16px;
+  line-height: 24px;
   font-weight: bold;
   color: #000000;
   text-transform: uppercase;
@@ -768,7 +788,7 @@ input[type="radio"].visually-hidden {
 
 .about-us-left b {
   display: block;
-
+  padding-top: 30px;
   font-size: 45px;
   line-height: 45px;
   font-weight: 600;
@@ -779,13 +799,14 @@ input[type="radio"].visually-hidden {
   margin: 0;
   width: 620px;
   box-sizing: border-box;
-  padding-top: 35px;
+  padding-top: 33px;
 }
 
 .about-us-right b {
   display: block;
   box-sizing: border-box;
-  padding-top: 35px;
+  padding-top: 30px;
+  padding-left: 16px;
 
   color: #000000;
   font-weight: bold;
@@ -794,6 +815,7 @@ input[type="radio"].visually-hidden {
 
 .about-us-orders {
   box-sizing: border-box;
+  margin-top: 24px;
 }
 
 .about-us-orders li {
@@ -801,7 +823,7 @@ input[type="radio"].visually-hidden {
 
   box-sizing: border-box;
   padding-left:37px;
-  padding-bottom: 30px;
+  padding-bottom: 24px;
 }
 
 .about-us-orders li::before {
@@ -811,14 +833,15 @@ input[type="radio"].visually-hidden {
   background-color: #fb565a;
   position: absolute;
   top: 11px;
-  left: 6px;
+  left: 1px;
 }
 
 
 .about-us-table {
   min-width: 345px;
   box-sizing: border-box;
-  margin-top: 55px;
+  margin-top: 60px;
+  border-spacing: 0px;
 }
 
 .table-cell {
@@ -826,6 +849,24 @@ input[type="radio"].visually-hidden {
   min-height: 45px;
   display: inline-block;
   box-sizing: border-box;
+  padding: 0px;
+  padding-right: 21px;
+}
+
+.second-cell .table-cell:nth-of-type(2){
+  padding-left: 4px;
+  padding-right: 0px;
+}
+
+.second-cell .table-cell:last-of-type {
+  padding-right: 0px;
+  padding-left: 9px;
+}
+
+.table-sup {
+  font-size: 27px;
+  font-weight: normal;
+  top: -16px;
 }
 
 .about-us-table tr:first-of-type {
@@ -841,34 +882,81 @@ input[type="radio"].visually-hidden {
 
 .our-partners {
   box-sizing: border-box;
-  padding-top: 62px;
-  padding-bottom: 50px;
-  padding-left: 35px;
-  padding-right: 43px;
+  margin-bottom: 78px;
 
   border-bottom: 2px solid #eeeeee;
-
-
 }
 
 .our-partners .list {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   flex-wrap: wrap;
+  align-items: center;
+  min-height: 181px;
 }
 
 .our-partner {
-  display: block;
+  position:relative;
+
+  display: inline-block;
   flex-shrink: 0;
   box-sizing: border-box;
-  padding-right: 45px;
-
-  border-right: 2px solid #eeeeee;
+  text-align: center;
+  width: 299.5px;
+  padding-top: 8px;
 }
+
+.our-partner.html-partner {
+  padding-top: 17px;
+}
+
+.our-partner.mish-partner {
+  padding-top: 15px;
+}
+
+.our-partner:nth-of-type(1){
+  width: 281px;
+  padding-right: 19px;
+
+}
+
+.our-partner:not(:nth-of-type(n+4))::after {
+  position: absolute;
+  content: "";
+  border: 2px solid #eeeeee;
+}
+
+.our-partner:nth-of-type(n+5) {
+  width: 281px;
+  padding-right: 19px;
+}
+
+.our-partner:nth-of-type(n+4){
+  padding-left: 20px;
+  width: 280px;
+}
+
  .our-partners .list li:last-of-type {
   padding-right: 0;
 
   border-right: none;
+}
+
+.our-partner:not(:nth-of-type(n+4))::after {
+  position: absolute;
+  content: "";
+  right: 0px;
+  bottom: 21px;
+  height: 50px;
+  border: 1px solid #eeeeee;
+}
+
+.our-partner.bord-partner::after {
+  bottom: 27px
+}
+
+.our-partner.pink-partner::after {
+  bottom: 8px
 }
 
 .our-partners img {
@@ -908,7 +996,7 @@ input[type="radio"].visually-hidden {
 }
 
 .filter-grid .filter-name {
-  margin-bottom: 11px;
+  margin-bottom: 14px;
 }
 
 .filter-features .filter-name {
@@ -968,7 +1056,7 @@ input[type="radio"].visually-hidden {
   align-items: flex-start;
   flex-shrink: 1;
   flex-grow: 0;
-  margin-bottom: 38px;
+  margin-bottom: 36px;
 }
 
 .filter-second h3 {
@@ -1078,7 +1166,7 @@ input[type="radio"].visually-hidden {
   flex-wrap: wrap;
   justify-content: flex-start;
   align-items: center;
-  margin-bottom: 60px;
+  margin-bottom: 58px;
 }
 
 .pagination-item a {
@@ -1094,7 +1182,7 @@ input[type="radio"].visually-hidden {
   text-align: center;
   color: #000000;
   text-transform: uppercase;
-  font-weight: bold;
+  font-weight: 500;
   font-family: inherit;
 
   border-radius: 3px;
@@ -1105,7 +1193,7 @@ input[type="radio"].visually-hidden {
   padding-top: 13px;
   padding-bottom: 13px;
 
-  font-weight: bold;
+  font-weight: 500;
   font-family: inherit;
 
   border: 3px solid #eeeeee;
@@ -1133,7 +1221,11 @@ input[type="radio"].visually-hidden {
   line-height: 30px;
   font-weight: bold;
   text-transform: uppercase;
-  color: #000000:
+  color: #000000;
+
+  text-align: center;
+  margin-top: 27px;
+  margin-bottom: 15px;
 }
 
 
@@ -1166,7 +1258,7 @@ input[type="radio"].visually-hidden {
   min-height: 308px;
   box-sizing: border-box;
   margin-top: 55px;
-  padding: 30px 53px 5px 51px;
+  padding: 31px 53px 5px 51px;
 
   background: #ffffff;
 }
@@ -1174,8 +1266,8 @@ input[type="radio"].visually-hidden {
 .contacts-container .button {
   min-width: 220px;
   display: block;
-  margin-top: 38px;
-  margin-bottom: 42px;
+  margin-top: 37px;
+  padding-left: 36px;
 }
 
 .contacts h3 {
@@ -1190,11 +1282,12 @@ input[type="radio"].visually-hidden {
 .contacts p {
   line-height: 18px;
   color: #666666;
+  margin-bottom: 19px;
 }
 
 .main-footer {
   min-height:  145px;
-  margin-top: 70px;
+  margin-top: 69px;
 
   background-color: #ffffff;
 }
@@ -1218,7 +1311,7 @@ input[type="radio"].visually-hidden {
 
 .footer-social p {
   margin-left: auto;
-  margin-right: 400px;
+  margin-right: 399px;
   margin-top: 10px;
 
   line-height: 22px;
@@ -1226,7 +1319,8 @@ input[type="radio"].visually-hidden {
 }
 
 .main-footer .social-text {
-  margin-right: 15px;
+  margin-right: 17px;
+  margin-top: 6px;
 }
 
 .footer-social-button{
@@ -1287,8 +1381,9 @@ input[type="radio"].visually-hidden {
 
 .inner-button {
   box-sizing: border-box;
-  padding: 15px 85px;
+  padding: 15px 77px;
   height: 50px;
+  width: 260px;
 
   font-weight: 600;
   color: #000000;

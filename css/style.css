@@ -489,6 +489,7 @@ input[type="radio"].visually-hidden {
 
   text-align: center;
   line-height: 18px;
+  color: #666666;
 }
 
 .catalog-container {

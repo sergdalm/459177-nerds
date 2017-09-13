@@ -467,7 +467,6 @@ input[type="radio"].visually-hidden {
 
   background-color: #eeeeee;
   width: 360px;
-  height: 230px;
 }
 
 .catalog-item:focus .after-item,

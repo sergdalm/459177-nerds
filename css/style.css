@@ -1386,6 +1386,7 @@ input[type="radio"].visually-hidden {
 }
 
 .modal {
+  display: none;
   position: relative;
   left: 50%;
   bottom: 60px;

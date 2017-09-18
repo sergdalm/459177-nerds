@@ -431,9 +431,12 @@ input[type="radio"].visually-hidden {
 }
 
 .range-controls .bar {
+    width: 70%;
     height: 2px;
+    margin-left: 0%;
 
     background: #00ca74;
+
 }
 
 .range-controls .toggle {
@@ -1097,7 +1100,6 @@ input[type="radio"].visually-hidden {
     font-weight: bold;
     color: #000000;
     text-transform: uppercase;
-    letter-spacing: 0.07ex;
 }
 
 .filter-price {
@@ -1406,6 +1408,7 @@ input[type="radio"].visually-hidden {
 .contacts-background {
     max-width: 1366px;
     height: 417px;
+    margin: auto;
 
     background-image: url("../img/map.png");
     background-repeat: no-repeat;

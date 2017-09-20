@@ -1563,7 +1563,7 @@ input[type="radio"].visually-hidden {
 
 .modal {
     position: fixed;
-    top: 10%;
+    top: 5%;
     left: 50%;
     transform: translateX(-50%);
     z-index: 2000;
@@ -1575,7 +1575,7 @@ input[type="radio"].visually-hidden {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
-    padding: 68px 100px 85px;;
+    padding: 68px 99px 85px;;
 
     color: #000000;
 
@@ -1605,7 +1605,7 @@ input[type="radio"].visually-hidden {
 .modal-close {
     position: absolute;
     top: 78px;
-    right: 90px;
+    right: 92px;
 
     width: 21px;
     height: 21px;
@@ -1622,11 +1622,11 @@ input[type="radio"].visually-hidden {
 .modal-close::after {
     position: absolute;
     content: "";
-    top: 9px;
+    top: 10px;
     left: -2px;
 
-    width: 25px;
-    height: 3px;
+    width: 27px;
+    height: 4px;
 
     background-color: #fecccd;
     border-radius: 5px;
@@ -1660,7 +1660,7 @@ input[type="radio"].visually-hidden {
     display: inline-block;
     vertical-align: baseline;
     margin-right: 200px;
-    margin-bottom: 8px;
+    margin-bottom: 9px;
 
     line-height: 18px;
     font-weight: bold;
@@ -1694,7 +1694,7 @@ input[type="radio"].visually-hidden {
     font-size: 45px;
     line-height: 45px;
     margin: 0;
-    margin-bottom: 39px;
+    margin-bottom: 38px;
 }
 
 .modal-form-box.text {
@@ -1711,11 +1711,11 @@ input[type="radio"].visually-hidden {
     width: 360px;
     display: inline-block;
     vertical-align: middle;
-    margin-bottom: 33px;
+    margin-bottom: 31px;
 }
 
 .letter-name-container {
-    margin-right: 35px;
+    margin-right: 36px;
 }
 
 .modal textarea {
@@ -1727,7 +1727,7 @@ input[type="radio"].visually-hidden {
 }
 
 .modal input {
-    padding-top: 5px;
+    padding-top: 1px;
     padding-left: 13px;
 
     font-size: 16px;

@@ -1566,6 +1566,7 @@ input[type="radio"].visually-hidden {
     top: 10%;
     left: 50%;
     transform: translateX(-50%);
+    z-index: 2000;
 
     width: 960px;
     min-height: 590px;

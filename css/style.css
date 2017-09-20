@@ -1574,7 +1574,7 @@ input[type="radio"].visually-hidden {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
-    padding: 150px 100px 85px 100px;
+    padding: 68px 100px 85px;;
 
     color: #000000;
 
@@ -1687,6 +1687,13 @@ input[type="radio"].visually-hidden {
 
 .modal-form-box:active {
     border-color: #000000;
+}
+
+.modal-title {
+    font-size: 45px;
+    line-height: 45px;
+    margin: 0;
+    margin-bottom: 39px;
 }
 
 .modal-form-box.text {

@@ -1700,7 +1700,7 @@ input[type="radio"].visually-hidden {
 .modal-form-box.text {
     width: 760px;
     min-height: 118px;
-    margin-bottom: 40px;
+    margin-bottom: 47px;
 
     background-color: #ffffff;
     resize: none;
@@ -1715,12 +1715,13 @@ input[type="radio"].visually-hidden {
 }
 
 .letter-name-container {
-    margin-right: 36px;
+    margin-right: 37px;
 }
 
 .modal textarea {
     padding-top: 10px;
     padding-left: 13px;
+    vertical-align: top;
 
     font-size: 16px;
     line-height: 18px;
